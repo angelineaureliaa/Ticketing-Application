@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.0 (wsit240-7e98ff4; 2017-08-03T21:19:54+0200) JAXWS-RI/2.3.0 JAXWS-API/2.3.0 JAXB-RI/2.3.0 JAXB-API/2.3.0 svn-revision#unknown. --><xs:schema xmlns:tns="http://services.ticketing.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://services.ticketing.com/">
+
+<xs:element name="BacaDataLogin" type="tns:BacaDataLogin"/>
+
+<xs:element name="BacaDataLoginResponse" type="tns:BacaDataLoginResponse"/>
+
+<xs:element name="BacaDataTempat" type="tns:BacaDataTempat"/>
+
+<xs:element name="BacaDataTempatResponse" type="tns:BacaDataTempatResponse"/>
+
+<xs:element name="BacaReservasi" type="tns:BacaReservasi"/>
+
+<xs:element name="BacaReservasiResponse" type="tns:BacaReservasiResponse"/>
+
+<xs:element name="PesanAcara" type="tns:PesanAcara"/>
+
+<xs:element name="PesanAcaraResponse" type="tns:PesanAcaraResponse"/>
+
+<xs:element name="PesanParkir" type="tns:PesanParkir"/>
+
+<xs:element name="PesanParkirResponse" type="tns:PesanParkirResponse"/>
+
+<xs:element name="bacaDataPending" type="tns:bacaDataPending"/>
+
+<xs:element name="bacaDataPendingResponse" type="tns:bacaDataPendingResponse"/>
+
+<xs:element name="bacaDataTabel" type="tns:bacaDataTabel"/>
+
+<xs:element name="bacaDataTabelResponse" type="tns:bacaDataTabelResponse"/>
+
+<xs:element name="cekUsername" type="tns:cekUsername"/>
+
+<xs:element name="cekUsernameResponse" type="tns:cekUsernameResponse"/>
+
+<xs:element name="claimTicketAcara" type="tns:claimTicketAcara"/>
+
+<xs:element name="claimTicketAcaraResponse" type="tns:claimTicketAcaraResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="register" type="tns:register"/>
+
+<xs:element name="registerResponse" type="tns:registerResponse"/>
+
+<xs:complexType name="claimTicketAcara">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="idRacr" type="xs:string" minOccurs="0"/>
+<xs:element name="idAcara" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="claimTicketAcaraResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="register">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="nama" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PesanAcara">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="idAcara" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PesanAcaraResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BacaDataTempat">
+<xs:sequence>
+<xs:element name="hello" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BacaDataTempatResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BacaReservasi">
+<xs:sequence>
+<xs:element name="tempat" type="xs:string" minOccurs="0"/>
+<xs:element name="lantai" type="xs:string" minOccurs="0"/>
+<xs:element name="tanggal" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BacaReservasiResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PesanParkir">
+<xs:sequence>
+<xs:element name="nomor_parkir" type="xs:string" minOccurs="0"/>
+<xs:element name="tanggal_pembelian" type="xs:string" minOccurs="0"/>
+<xs:element name="tanggal_parkir" type="xs:string" minOccurs="0"/>
+<xs:element name="lantai" type="xs:string" minOccurs="0"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="tempatt" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PesanParkirResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cekUsername">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="nama" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cekUsernameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bacaDataTabel">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bacaDataTabelResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bacaDataPending">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bacaDataPendingResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BacaDataLogin">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BacaDataLoginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

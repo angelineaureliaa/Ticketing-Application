@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/TicketWebService/AcaraWebService?WSDL" uri="xml-resources/web-service-references/AcaraWebService/wsdl/localhost_8080/TicketWebService/AcaraWebService.wsdl"/>
+    <system systemId="http://localhost:8080/TicketWebService/AcaraWebService?xsd=1" uri="xml-resources/web-service-references/AcaraWebService/wsdl/localhost_8080/TicketWebService/AcaraWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/TicketWebService/TicketWebService?WSDL" uri="xml-resources/web-service-references/TicketWebService/wsdl/localhost_8080/TicketWebService/TicketWebService.wsdl"/>
+    <system systemId="http://localhost:8080/TicketWebService/TicketWebService?xsd=1" uri="xml-resources/web-service-references/TicketWebService/wsdl/localhost_8080/TicketWebService/TicketWebService.xsd_1.xsd"/>
+</catalog>
